@@ -1,0 +1,150 @@
+/* body {
+  color: red;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    color: green;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    color: blueviolet;
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: sans-serif;
+}
+.menu-wrap {
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  font-size: 0;
+}
+.menu ul li {
+  display: inline-block;
+  font-size: initial;
+  padding: 0 20px;
+  font-weight: 600;
+}
+.menu ul li a {
+  color: #333;
+}
+.actions-btn {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+.actions-btn .contact {
+  background: #75b7eb;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 99px;
+}
+.actions-btn .contact a {
+  color: #fff;
+}
+.actions-btn .toggle-menu {
+  display: none;
+}
+.actions-btn .toggle-menu {
+  display: none;
+}
+.actions-btn .toggle-menu .toggle-ic {
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #00000048;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+}
+@media screen and (max-width: 991.98px) {
+  .actions-btn .toggle-menu {
+    display: block;
+  }
+  .menu {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    height: 100vh;
+    translate: -300px;
+    transition: 0.2s ease;
+    z-index: 99;
+  }
+  .menu ul {
+    margin-top: 40px;
+  }
+  .menu ul li {
+    display: block;
+    padding: 0 0 20px 20px;
+  }
+  .menu ul li a {
+    color: #fff;
+    font-weight: 500;
+  }
+  .container {
+    max-width: 100vw;
+  }
+  input[id="toggle-menu"]:checked + .menu-wrap .menu {
+    translate: 0;
+  }
+  input[id="toggle-menu"]:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .contact {
+    display: none;
+  }
+  .container {
+    max-width: 100vw;
+  }
+}
+@media screen and (max-width: 299.98px) {
+  .menu {
+    width: 100vw;
+  }
+  .actions-btn .toggle-menu .toggle-ic {
+    padding: 12px;
+    margin-left: 0;
+  }
+  .toggle-menu {
+    position: relative;
+    z-index: 9999;
+  }
+  input[id="toggle-menu"]:checked + .menu-wrap .toggle-ic {
+    color: #fefefe;
+  }
+}

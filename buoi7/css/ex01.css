@@ -1,0 +1,101 @@
+/* 
+min-width-----------width------------max-width
+*/
+/* .content {
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 1000px;
+}
+.image {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+  line-height: 0;
+}
+.image img {
+  max-width: 100%;
+} */
+
+/* 
+overflow:
+- visible --> hiển thị nội dung bị tràn (mặc định)
+- hidden --> Ẩn nội dung bị tràn
+- scroll --> Ẩn và hiển thị thanh cuộn (lúc nào cũng hiển thị)
+- auto --> Ẩn và hiển thị thanh cuộn (chỉ hiển thị thanh cuộn)
+
+overflow-x 
+overflow-y
+*/
+/* .box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.box::-webkit-scrollbar {
+  width: 0px;
+}
+.box::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+.box::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  width: 10px;
+  border-radius: 10px;
+}
+.box p {
+  width: 400px;
+} */
+
+/* 
+padding-top
+padding-left
+padding-right
+padding-bottom
+
+padding không có giá trị âm, không có auto,
+padding margin không thiết lập được top, bottom nếu là inline
+nếu đơn vị là % --> tỉ lệ theo width của thẻ cha
+*/
+/* .box {
+  width: 300px;
+  border: 1px solid red;
+  margin: auto;
+}
+.btn {
+  text-decoration: none;
+  background-color: green;
+  color: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+} */
+
+/* 
+TH1:
+- 2 giá trị dương --> lấy giá trị lớn hơn
+- 1 giá trị dương 1 giá trị âm --> cộng 2 giá trị
+- 2 giá trị âm --> lấy giá trị nhỏ hơn
+
+TH2:
+- margin phần tử con, không tự động đẩy phần tử cha
+- khắc phục: inline-block, flex, inline-flex hoặc position:absolute, fixed hoặc float left, right
+*/
+/* h2 {
+  border: 1px solid red;
+  margin: 0;
+}
+.title-1 {
+  margin-bottom: 10px;
+}
+.title-2 {
+  margin-top: 20px;
+} */
+/* .box {
+  background-color: green;
+  color: #fff;
+  border: 1px solid red;
+}
+.box h2 {
+  margin: 50px 0;
+} */

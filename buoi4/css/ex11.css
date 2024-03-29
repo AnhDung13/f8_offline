@@ -1,0 +1,38 @@
+/* 
+Thành phần giả
+Cú pháp: selector::pseudo-element{
+
+}
+
+::before
+::after
+::first-letter
+::first-line
+::selection
+::placeholder
+*/
+h1::before {
+  content: "a";
+}
+h1::after {
+  content: "b";
+}
+.title::before {
+  content: attr(data-index);
+}
+p::first-line {
+  color: red;
+}
+p::first-letter {
+  color: green;
+  font-size: 2em;
+}
+p::selection {
+  background: black;
+  color: #fff;
+}
+input::placeholder {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}

@@ -1,0 +1,93 @@
+/* 
+flex
+- Kỹ thuật chia layout linh hoạt
+- trục: main và cross
+- thành phần: flex container và flex item
+
+
+1. Các nhóm thuộc tính trong nhóm flex container 
+- display: flex --> Kích hoạt flex
+- flex-direction: chọn hướng cho trục chính
+  + row
+  + column
+  + row-reverse
+  + column-reverse
+- justify-content: căn chỉnh cách item theo hướng // với trục chính
+  + flex-start
+  + flex-end 
+  + center
+  + space-between
+  + space-around (item đầu tiên và cuối cùng khoảng cách với contain bằng 1 nửa khoảng cách với các item còn lại
+  + space-evenly (khoảng cách tất cả đều nhau
+- align-items: căn chỉnh các item theo hướng vuông góc với trục chính
+  + stretch
+  + flex-start
+  + center
+  + flex-end
+  + baseline
+
+- flex-wrap: wrap các item nếu tổng kích thước > kích thước của container
+  + wrap
+  + nowrap
+  + wrap-reverse
+
+- align-content: căn chỉnh hàng (flex - direction: row), cột (flex-direction: column) --> chỉ áp dụng khi có từ 2 hàng (cột trở lên)
+Về nhà:
+- align-content
+- flex-wrap
+- gap
+
+2. các thuộc tính trong nhóm flex item
+
+flex-grow: lấp đầy khoảng cách còn thừa của container (mặc định = 0)
+
+flex-shrink: 
+
+flex-basis
+
+flex: grow shrink basic
+
+align-self
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+}
+.item {
+  background: green;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+.item:nth-child(2) {
+  display: flex;
+  align-items: center;
+} */
+.container {
+  display: flex;
+  max-width: 700px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+.pic {
+  display: flex;
+  align-items: center;
+}
+.pic img {
+  width: auto;
+  max-height: 50px;
+}

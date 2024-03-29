@@ -1,0 +1,24 @@
+/* 
+background-color
+background-image
+background-repeat
+background-position
+background-size
+background-attachment
+background
+
+*/
+body {
+  height: 2000px;
+  /* height: 2000px;
+  background-color: antiquewhite;
+  background-image: url("https://picsum.photos/200");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  background-attachment: fixed; */
+}
+.box {
+  background: aqua fixed url("https://picsum.photos/200") no-repeat 0 0 / cover;
+  height: 300px;
+}

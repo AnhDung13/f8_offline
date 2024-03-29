@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+trôi các thành phần html về bên trái hoặc bên phải thành phần cha của nó
+cú pháp: float: none | left | right
+
+clear: Ngăn chặc element bị trôi do ảnh hưởng của cú pháp float
+cú pháp: left , right , auto
+
+lưu ý thuộc tính clear chỉ hoạt động với thẻ black
+*/
+.box {
+  width: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  /* fix mất chiều cao thẻ cha khi dùng float */
+  overflow: auto;
+}
+
+/* .box .item-1 {
+  width: 30%;
+  height: 100px;
+  background-color: rgba(0, 128, 0, 0.572);
+  color: #fff;
+  float: left;
+}
+.box .item-2 {
+  width: 30%;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.478);
+  color: #fff;
+  float: left;
+}
+.text {
+  color: white;
+  background: black;
+} */
+.box img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 0px;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+button {
+  float: right;
+}

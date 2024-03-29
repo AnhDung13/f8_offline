@@ -1,0 +1,57 @@
+/* 
+Lớp giả (State)
+Cú pháp: selector:pseudo-class{
+
+}
+1. :hover, :active, :focus
+lưu ý: 
+- focus chỉ áp dụng với form
+- hover, active áp dụng với tất cả các thẻ html
+ngoại lệ: Để 1 thẻ không phải form có focus thì phải thêm thuộc tính tabindex
+
+2. not
+3. disable
+4. checked
+*/
+/* 
+.btn:hover {
+  background-color: green;
+}
+.btn:focus {
+  background: blue;
+}
+.btn:active {
+  background: blueviolet;
+}
+input:focus::placeholder {
+  color: red;
+}
+input:active::placeholder {
+  font-style: italic;
+}
+h1:focus {
+  color: red;
+} */
+/* .products .item:not(.active, .inactive) {
+  color: red;
+}
+.btn {
+  background: green;
+  border: 0;
+}
+.btn:disabled {
+  color: #fff;
+} */
+input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+  color: blue;
+}
+input[type="checkbox"]:checked:disabled ~ span {
+  color: gray;
+}
+.products h2:first-of-type {
+  color: red;
+}
+.products h2:last-of-type {
+  color: green;
+}

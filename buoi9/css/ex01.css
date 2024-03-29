@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .overlay {
+  background: rgba(0, 0, 0, 0.237);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+h2 {
+  float: left;
+}
+.modal-header > label {
+  float: left;
+}
+.modal-header {
+  background: white;
+  position: absolute;
+  z-index: 3;
+  width: 500px;
+  top: 20px;
+  left: calc(50% - 250px);
+  padding: 20px;
+  display: none;
+}
+#check:checked ~ .overlay {
+  display: block;
+}
+#check:checked ~ .modal-header {
+  display: block;
+} */
+.title {
+  display: inline-block;
+  position: relative;
+  margin: 10px 15px;
+  user-select: none;
+}
+.checkbox > label {
+  display: block;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid blue;
+  margin-right: 10px;
+}
+.title::after {
+  content: "";
+  border-top: 1px solid blue;
+  border-right: 1px solid blue;
+  width: 10px;
+  height: 5px;
+  rotate: 135deg;
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  display: none;
+}
+input:checked ~ .title::after {
+  display: inline-block;
+}

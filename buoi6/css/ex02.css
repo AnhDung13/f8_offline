@@ -1,0 +1,60 @@
+/* 
+Border: tạo đường viền cho thẻ html
+- border-width
+- border-style: solid, dotted, dashed, double
+- border-color
+- border-top-width
+- border-left-width
+- border-right-width
+- border-bottom-width
+- border-top-style
+- border-left-style
+- border-right-style
+- border-top-color
+- border-left-style
+- border-right-style
+- border-bottom-style
+- border: style width color
+- border-top: style width color
+- border-left: style width color
+- border-right: style width color
+- border-bottom: style width color
+*/
+
+/* .box {
+  width: 0px;
+  height: 0px;
+  border-top-width: 0px;
+  border-bottom: 100px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+} */
+.box {
+  /* width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%; */
+  /* border-radius: 10px 20px; */
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 40px; */
+  width: 300px;
+  height: 200px;
+  background: green;
+}
+/* .btn {
+  border: 0;
+  background: green;
+  color: #fff;
+  width: 200px;
+  height: 30px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: red;
+}
+.btn-large {
+  height: 100px;
+} */

@@ -1,0 +1,33 @@
+/* 
+attribute selector
+
+tag[attribute]: chọn thẻ tag có thuộc tính là attribute
+tag[attribute="value"]: chọn thẻ tag có thuộc tính attribute = value
+tag[attribute^="value"]: chọn thẻ tag có thuộc tính attribute có giá trị bắt đầu là value
+tag[attribute*="value"]: chọn thẻ tag có thuộc tính attribute có giá trị bao gồm value
+tag[attribute$="value"]: chọn thẻ tag có thuộc tính attribute có giá trị có đuôi là value
+*/
+/* ul li a[target] {
+  color: red;
+} */
+/* ul li a[href="https://fullstack.edu.vn"]
+{
+  color: orange;
+} */
+/* ul li a[href^="https://fullstack.edu.vn"]
+{
+  color: orange;
+} */
+/* ul li a[href*="fullstack.edu.vn"] {
+  color: orange;
+} */
+/* ul li a[href$=".net"] {
+  color: red;
+} */
+/* .row [class^="col-"] {
+  color: red;
+} */
+.box * {
+  background: blueviolet;
+  color: #fff;
+}

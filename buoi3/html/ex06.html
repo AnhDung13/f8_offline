@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML FORM</h1>
+    <!-- action là ulr muốn gửi đến method là phương thức  -->
+    <!-- không được đặt form lồng form các form phải độc lập -->
+    <form action="" method="">
+      <div>
+        <!-- thẻ label mô tả trường của nó -->
+        <label for="fullname">Fullname:</label>
+        <!-- value là giá trị mặc định -->
+        <!-- disable là vô hiệu hoá trường -->
+        <!-- readonly là chỉ đọc server vẫn nhận được-->
+        <!-- requiredd là bắt buộc phải có dữ liệu trong trường khi submit form -->
+        <!-- maxlength là ký tự tối đa -->
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Nhập họ và tên"
+          id="fullname"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <!--type email bắt buộc phải có @ -->
+        <input type="email" name="email" placeholder="Nhập email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Nhập password"
+          id="password"
+        />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Nhập tuổi"
+          id="age"
+          step=""
+        />
+      </div>
+      <div>
+        <!-- multiple chọn nhiều file -->
+        <label for="avatar">Avatar:</label>
+        <input type="file" name="avatar" id="avatar" />
+      </div>
+      <div>
+        <label>Giới tính</label>
+        <label>
+          <input type="radio" name="gender" value="male" checked /> Nam
+        </label>
+        <label> <input type="radio" name="gender" value="female" /> Nữ </label>
+      </div>
+      <div>
+        <label>Nguồn</label>
+        <label
+          ><input type="checkbox" name="source" value="facebook" checked />
+          Facebook</label
+        >
+        <label>
+          <input type="checkbox" name="source" value="google" /> Google
+        </label>
+        <label>
+          <input type="checkbox" name="source" value="website" /> Website
+        </label>
+      </div>
+      <div>
+        <label for="province">Tỉnh/Thành phố</label>
+        <label>
+          <select name="province" id="province">
+            <option value="0">Chọn Tỉnh/Thành phố</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Đà Nẵng</option>
+            <option value="3">Hồ Chí Minh</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="message">Tin Nhắn</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Message"
+        ></textarea>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: rgb(13, 17, 29);
+}
+/* .box {
+  width: 300px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+.box ul {
+  /* list-style-position: inside | outside; */
+/* list-style-position: inside; */
+/*
+    list-style-type: kiểu danh sách 
+    - none --> không ở định dạng danh sách
+    - disc --> mặc định ul
+    - circle --> chấm trắng ở giữa
+    - square --> hình vuông
+    - decimal --> sắp xếp dạng số
+    - decimal-leading-zero --> giống trên nhưng có số 0 đằng trước
+    - lower-alpha --> chữ thường
+    - upper-alpho --> chữ hoa
+    - lower-roman --> số la mã thường
+    - upper-roman --> số la mã hoa
+  */
+/* list-style-type: none; */
+/* list-style-image: thay biểu tượng bằng ảnh --> không khuyến khích sử dụng vì không tùy chỉnh được kích thước hình ảnh 
+     nên thay thế bằng background + before*/
+/* } */
+.nav {
+  list-style: none;
+  background-color: black;
+  height: 50px;
+  font-size: 0;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav li {
+  display: inline-block;
+  font-size: initial;
+}
+.nav li a {
+  display: block;
+  padding: 16px 30px;
+}
+.nav > li:hover > a {
+  background: #1abc9c;
+  border-radius: 10px;
+}
+.nav ul li a:hover {
+  background: #1abc9c;
+  border-radius: 10px;
+}
+.nav li ul {
+  position: absolute;
+  width: 200px;
+  background-color: burlywood;
+  display: none;
+}
+.nav > li:hover ul {
+  display: block;
+}
+.nav ul li a {
+  display: block;
+  padding: 16px 30px;
+  width: 100%;
+}

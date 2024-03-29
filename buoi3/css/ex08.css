@@ -1,0 +1,29 @@
+/* h1 {
+  color: red;
+  background: yellow;
+}
+h2 {
+  color: yellow;
+  background: red;
+} */
+/* h3 {
+  color: blueviolet;
+}
+.box .title {
+  color: red;
+}
+.wrapper .title {
+  color: green;
+} */
+.box > .title {
+  color: green;
+}
+/* .menu > li > a {
+  color: red;
+} */
+/* ul > li > a {
+  color: red;
+} */
+.menu ul a {
+  color: red;
+}

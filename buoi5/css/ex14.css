@@ -1,0 +1,18 @@
+/* 
+font-size: thay đổi cơ chữ
+Cú pháp:font - size: value + unit
+- px
+- em
+- rem
+
+lưu ý: font-size là thuộc tính kế thừa
+*/
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.2rem;
+}
+.content {
+  font-size: 1.5em;
+}

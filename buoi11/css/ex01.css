@@ -1,0 +1,39 @@
+/* 
+thuộc tính transform: biến đổi hình dạng html
+- xoay
+- phóng to / thu nhỏ
+- nghiêng
+- di chuyển
+
+cú pháp: transform: value
+- rotate(angle) --> xoay 2d theo trục z
+- rotateX(angle) --> xoay theo trục x
+- rotateY(angle) --> xoay theo trục y
+- scale(x,y) --> phóng to thu nhỏ theo tỷ lệ x, y
+- scaleX(value) --> phóng to theo trục x
+- scaleY(value) --> phóng to theo trục y
+- skew(x, y) --> nghiêng theo góc x, y
+- skewX(value) --> nghiêng theo trục x
+- skewy(value) --> nghiêng theo trục y
+- translate(x,y) --> di chuyển theo x, y
+Lưu ý: nếu đơn vị là % --> tỷ lệ với kích thước của chính nó
+
+Các thuộc tính bổ sung 
+- rotate --> tương tự transform: rotate()
+- scale --> tương tự transform: scale()
+- translate --> tương tự transform: translate()
+
+thuộc tính transform-origin: x y --> xác định vị trí của trục (mặc định:50% 50%)
+*/
+
+.wrap {
+  border: 1px solid red;
+  padding: 30px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  background: green;
+  margin: 30px auto;
+  transition: all 0.4s linear;
+}
