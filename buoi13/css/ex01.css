@@ -1,0 +1,23 @@
+/* 
+1. đổ bóng khối
+
+box-shadow: h-offset v-offset blur spread color
+
+2. đổ bóng chữ
+
+tex-shadow: h-offset v-offset color
+*/
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background: green;
+  margin: 30px auto;
+  box-shadow: 0 0 60px 10px red, 0 0 70px 15px blue;
+} */
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
+    -1px -1px 0px #000;
+}
