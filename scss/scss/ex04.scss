@@ -1,0 +1,28 @@
+// biến (variable)
+// 1. biến toàn cục (global variable)
+// 2. biến cục bộ (local variable)
+
+// cú pháp $tenbien: giatri;
+
+// lưu ý: nên đặt tên biến theo cú pháp camelcase
+// đặc điểm: từ đầu tiên viết thường, từ thứ 2 trở đi viết hoa ký tự đầu
+// ví dụ: $primaryColor, $backgroundColor,
+// toán tử: +, -, *, /, %(chia lấy dư)
+// biến trong scss sẽ nhận các giá trị: tên thuộc tính css, giá trị thuộc tính css, số, true, false, chuỗi, mảng(nói sau)
+
+$primary-color: red;
+$size:10px;
+$width:200;
+$propertyName:color;
+$selector:".box";
+$type:"-large";
+header{
+    background: $primary-color;
+    font-size: $size + 20;
+    width: #{$width+100}px;
+    #{$propertyName}:red;
+}
+
+#{$selector+$type}{
+    color: red;
+}

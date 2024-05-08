@@ -1,0 +1,54 @@
+// comment scss
+/* comment css */
+:root{
+    --primary-color: red;
+}
+
+// cú phaps lồng selector, thuộc tính(ít dùng)
+
+.header{
+    padding: 30px 0;
+    .top-bar{
+        display: flex;
+        a{
+            text-decoration: none;
+            &:hover{
+                color: red;
+            }
+            &::before{
+                content: "";
+            }
+        }
+        .top-left{
+            list-style: none;
+        }
+        .top-right{
+            background: yellow;
+        }
+    }
+    .header-inner{
+        .logo{
+            box-shadow:3px 3px 5px 5px #ccc;
+            >img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        nav{
+            &.primary-menu{
+                background: green;
+                > ul{
+                    list-style: none;
+                    > li{
+                        >a{
+                            color:#fff;
+                            &:hover{
+                                color: yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

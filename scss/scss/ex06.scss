@@ -1,0 +1,100 @@
+// vòng lặp: cú pháp trong lập trình cho phép 1 đoạn chương trình chạy lặp đi lặp lại
+
+// 1. @for
+// 2. @while --> ít dùng
+// 3. @each
+// @for $i from 1 through 12{
+// .item-#{$i} {
+//     @if $i % 2 == 0 {
+//         font-size: 30px *$i;
+//     }@else{
+//         width: 10% *$i;
+//     }
+// }
+// }
+
+// $sizes: 40px 60px 80px 100px; //biến có nhiều giá trị
+// --> mảng. Mỗi giá trị sẽ cách nhau bởi dấu , hoặc khoảng trắng
+
+//để lặp qua các giá trị dùng vòng lặp @each
+
+// ví dụ: giá trị cuối cùng, thiết lập front-size = 0
+// $length: length($sizes);
+// $count: 0;
+// @each $size in $sizes {
+//     $count: $count + 1;
+//     .item-#{$size}{
+//         @if ($count == $length){
+//             font-size: 0;
+//         }@else{
+//             font-size: $size;
+//         }
+//     }
+// }
+
+// $sizes: (small 40px normal) (medium 60px 600) (large 80px 800);
+
+// @each $type, $size, $weight in $sizes{
+//     .column-#{$type}{
+//         font-size: $size;
+//         font-weight: $weight;
+//     }
+// }
+// destructuring
+
+// map
+$weight: (
+  normal: 400,
+  // key value
+  medium: 500,
+  bold: 700,
+);
+@each $name, $value in $weight {
+  .text-#{$name} {
+    font-weight: $value;
+  }
+}
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@each $name, $value in $breakpoints {
+  @media screen and (min-width:#{$value}) {
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i} {
+        flex-basis: 50 * $i + 0%;
+      }
+    }
+  }
+}
+
+@mixin screenTablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+.header {
+  display: flex;
+  padding: 30px 0;
+}
+// vấn đề viết responsive cho selector
+@include screenTablet() {
+  .header {
+    display: block;
+    a {
+      font-size: 20px;
+    }
+  }
+  .nav {
+    display: block;
+    a {
+      font-size: 20px;
+    }
+  }
+}

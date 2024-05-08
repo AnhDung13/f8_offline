@@ -1,0 +1,71 @@
+// câu lệnh rẽ nhánh
+// toán tử so sánh: >, <, >=, <=, == , !=
+// toán tử lý luận and, or, not,
+//  - and: đúng khi tất cả các biểu thức đều đúng
+//  - or: sai khi tất cả biểu thức đều sai
+//  - not: ngược lại
+// $a: 15;
+
+// @if ($a < 5){
+//     .box{
+//         color:red
+//     }
+// }@else if ($a >= 5 and $a < 10){
+//     .box{
+//         color:green;
+//     }
+// }@else if ($a >= 10 and $a < 15){
+//     .box{
+//         color: yellow;
+//     }
+// }@else {
+//     .box {
+//         color: blueviolet;
+//     }
+// }
+
+// kế thừa
+// 1. @extend
+// 2. placeholder (@extend)
+// 3. @mixin và @include
+@import "partials/variable";
+@import "partials/mixin";
+@import "partials/placeholder";
+.box {
+  background: $primaryColor;
+  padding: 30px 0;
+  width: 1200px;
+  margin: 0 auto;
+  .item {
+    @extend .box;
+  }
+}
+
+.post {
+  background: gray;
+  @extend .box;
+  @extend %transition;
+}
+.product {
+  background: #fff;
+  @extend .box;
+  @extend %transition;
+}
+
+// @mixin container {
+//     .container{
+//         @include center();
+//     }
+// }
+
+.testimonials {
+  background: gray;
+  @include center(1200px);
+}
+// @include container
+
+// tách file:
+// cách 1: @import
+// cách 2: @use
+// cách 3: @forward
+// lưu ý khi tạo file để import: bắt đầu bằng gạch dưới _
