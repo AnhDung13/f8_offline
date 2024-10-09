@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body {
+        height: 2000px;
+      }
+      .back-to-top {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        display: none;
+        z-index: 9999;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section {
+        height: 100vh;
+      }
+      .inner-btn {
+        position: fixed;
+        background: yellow;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        height: 60px;
+      }
+      .btn {
+        padding: 2px 6px;
+        cursor: pointer;
+        &.active {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button class="btn">click me</button>
+    <button class="back-to-top">top</button> -->
+    <div class="inner-btn">
+      <button class="btn" data-target="#section-2">section-2</button>
+    </div>
+    <section class="section" style="margin-top: 60px">
+      <h1>Section-1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+        provident. Voluptatum excepturi perferendis possimus doloribus ipsam
+        modi perspiciatis fuga? Consequatur sed, maxime facere odio quia error
+        magni magnam in voluptates!
+      </p>
+    </section>
+    <section class="section" id="section-2">
+      <h1>Section-2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+        provident. Voluptatum excepturi perferendis possimus doloribus ipsam
+        modi perspiciatis fuga? Consequatur sed, maxime facere odio quia error
+        magni magnam in voluptates!
+      </p>
+    </section>
+    <section class="section">
+      <h1>Section-3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+        provident. Voluptatum excepturi perferendis possimus doloribus ipsam
+        modi perspiciatis fuga? Consequatur sed, maxime facere odio quia error
+        magni magnam in voluptates!
+      </p>
+    </section>
+    <script src="js/ex15.js"></script>
+  </body>
+</html>
